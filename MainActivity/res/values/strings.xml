@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Comegys Behavior</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_section1">Form</string>
+    <string name="title_section2">Reports</string>
+    <string name="past_reports">Past Reports</string>
+    <string name="details">Details:</string>
+    <string name="send_email">Send Email</string>
+    <string name="delete_report">Delete Report</string> 
+    
+    <string name="report_header">Basic Information</string>
+    <string name="scholar_name">Scholar Name</string>
+    <string name="grade">Grade</string>
+    <string name="date">Date</string>
+    <string name="b_report">Behavior Report</string>
+    <string name="a_report">Academic Report</string>
+    <string name="positive">Positive</string>
+    <string name="negative">Negative</string>
+    <string name="strategies">Strategies / Interventions Used By Staff</string>
+    <string name="location">Setting</string>
+    <string name="comments">Comments:</string> 
+    
+    
+    
+        <string name="strategy_plannedIgnoring">Planned ignoring (differential attention)</string>
+        <string name="strategy_behaviorLog">Behavior log (stars &amp; checks)</string>
+        <string name="strategy_reteachReviewExpectations">Re-teach/review expectations</string>
+        <string name="strategy_restorativeAction">Restorative action</string>
+        <string name="strategy_apologyVerbalAndOrWritten">Apology (verbal and/or written)</string>
+        <string name="strategy_scholarPairingTimeOut">Scholar pairing/buddy time-out</string>
+        <string name="strategy_timeOut">Time-out</string>
+        <string name="strategy_ageAppropriateWritingActivity">Age-appropriate writing activity</string>
+        <string name="strategy_behaviorProcessingForm">Behavior processing form</string>
+        <string name="strategy_teacherScholarConversationOutsideClassroom">Teacher/scholar conversation outside classroom</string>
+        <string name="strategy_conversationWithFamily">Conversation with family</string>
+        <string name="strategy_conference">Conference</string>
+        <string name="strategy_lossOfPriveleges">Loss of privileges</string>
+        <string name="strategy_other">Other</string>
+        
+        
+    <string-array name="settings_array">
+           <item > </item>
+           <item>classroom</item>
+           <item>hallway/stairs</item>
+           <item>bathroom</item>
+           <item>cafeteria/auditorium</item>
+           <item>yard/outdoors</item>
+    </string-array>
+    
+    <string-array name="type_array">
+        <item>Behavior Report</item>
+        <item>Academic Report</item>
+    </string-array>
+    
+            <string name="behavior_respectForSelfAndOthers">Respect for self &amp; others</string>
+        <string name="behavior_followingDirections">Following directions</string>
+        <string name="behavior_positiveConflictResolution">Positive conflict resolution</string>
+        <string name="behavior_peerMediation">Peer mediation</string>
+        <string name="behavior_helpingPeerOrStaff">Helping peer / staff</string>
+        <string name="behavior_leadership">Leadership</string>
+        <string name="behavior_dealingWithAdversityPositively">Dealing with adversity positively</string>
+        <string name="behavior_goingAboveAndBeyond">Going above and beyond</string>
+        <string name="behavior_refusalToFollowDirectionsOrParticipate">Refusal to follow directions and/or participate</string>
+        <string name="behavior_disruptionOfClassOrActivity">Disruption of class / activity / etc</string>
+        <string name="behavior_disrespectOfStaffOrScholars">Disrespect / disregard of staff / scholars</string>
+        <string name="behavior_inappropriateLanguageOrGestures">Inappropriate language / gestures</string>
+        <string name="behavior_inappropriatePhysicalContactOrFighting">Inappropriate physical contact / fighting / violence</string>
+        <string name="behavior_teasingOrInstigatingConflict">Teasing / instigating arguments or conflict</string>
+        <string name="behavior_runningInCommonSpaces">Running in hallway / common spaces</string>
+        <string name="behavior_leavingSupervisionUnattended">Leaving supervision / class / grounds unattended</string>
+        <string name="behavior_failingToFollowRules">Failure to follow program / school rules</string>
+        <string name="behavior_other">Other</string>
+        
+     
+        <string name="academic_respectsLearningForSelfAndOthers">Respects learning for self &amp; others</string>
+        <string name="academic_followsDirections">Follows directions</string>
+        <string name="academic_consistentlyPreparedAndOrganized">Consistently prepared and organized</string>
+        <string name="academic_completesHomeworkAndAssignments">Completes homework / assignments</string>
+        <string name="academic_staysOnTask">Stays on task</string>
+        <string name="academic_peerTutoring">Peer tutoring (give or receive)</string>
+        <string name="academic_struggles">Struggles with:</string>
+        <string name="academic_disruptionOfClassLessonActivity">Disruption of class / lesson / activity</string>
+        <string name="academic_refusalToFollowDirectionsAndParticipate">Refusal to follow directions and/or participate</string>
+        <string name="academic_unPreparedAndDisorganized">Unprepared / disorganized</string>
+        <string name="academic_failureToCompleteHomeworkAssignment">Failure to complete homework / assignment</string>
+        <string name="academic_questionableAcademicIntegrity">Questionable academic integrity</string>
+        <string name="academic_other">Other</string>        
+    
+        
+    
+    <string-array name="grade_array">
+        <item >1st</item>
+        <item >2nd</item>
+        <item >3rd</item>
+        <item >4th</item>
+        <item >5th</item>
+        <item >6th</item>
+        <item >7th</item>
+        <item >8th</item>
+        <item >9th</item>
+        <item >10th</item>
+        <item >11th</item>
+        <item >12th</item>
+    </string-array>
+    
+    <string-array name="temp_array">
+        <item>Please choose report type (Academic or Behavior)</item>
+    </string-array>
+    
+    <!-- Bundle keys -->
+    <string name="past_report_data">PastReport data</string>
+    
+    <!-- Past Report Menu -->
+    <string name="menu_refresh">Refresh</string>
+    
+</resources>
+
+

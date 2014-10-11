@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <!-- Header -->
+    <TextView android:id="@+id/past_reports_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:gravity="center" 
+       
+        android:fontFamily="sans-serif-condensed"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+       
+        android:text="@string/past_reports"
+        style="@android:style/TextAppearance.Large"  />
+    
+    <!-- Content -->
+	<ScrollView
+	    android:id="@+id/report_scrollview"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent">
+
+	 	<LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="16dip"
+	      	android:paddingRight="16dip"
+	        android:orientation="vertical"
+	        android:gravity="center"
+	        android:fontFamily="sans-serif-light" >
+
+		<!-- Name -->
+		    <TextView
+		        android:id="@+id/name"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="STUDENT NAME"
+		        
+		        style="?android:attr/listSeparatorTextViewStyle" />
+
+
+		    <!-- Student Details -->
+			<LinearLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:padding="10dip"
+			    android:orientation="horizontal" >
+				<TextView
+	                android:layout_gravity="left"
+	                android:layout_width="0dip"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:fontFamily="sans-serif-light"
+	                style="@android:style/TextAppearance.Medium"
+	                android:text="@string/grade" />
+
+				<TextView android:id="@+id/grade"
+				    	
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="right"
+		                android:fontFamily="sans-serif-light"
+		                android:textAllCaps="true"/>
+			</LinearLayout>
+
+			<LinearLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:padding="10dip"
+			    android:orientation="horizontal" >
+				<TextView
+	                android:layout_gravity="left"
+	                android:layout_width="0dip"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:fontFamily="sans-serif-light"
+	                style="@android:style/TextAppearance.Medium"
+	                android:text="@string/date" />
+
+				<TextView android:id="@+id/date"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="right"
+		                
+		                android:fontFamily="sans-serif-light"
+		                />
+			</LinearLayout>
+
+	    <!--Behavior Report -->
+        <TextView 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/b_report" 
+		    
+	        style="?android:attr/listSeparatorTextViewStyle" />
+
+	        <LinearLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:padding="10dip"
+			    android:orientation="horizontal" >
+				<TextView
+	                android:layout_gravity="left"
+	                android:layout_width="0dip"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:fontFamily="sans-serif-light"
+	                style="@android:style/TextAppearance.Medium"
+	                android:text="@string/location" />
+
+				<TextView android:id="@+id/behavior_location"
+				    
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="right"
+		                
+		                android:fontFamily="sans-serif-light" />
+			</LinearLayout>
+
+	        <LinearLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:padding="10dip"
+			    android:orientation="vertical" >
+				
+				<TextView
+	                android:layout_gravity="left"
+	               	android:layout_width = "wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:fontFamily="sans-serif-light"
+	                style="@android:style/TextAppearance.Medium"
+	                android:text="@string/details" />
+			
+				<TextView android:id="@+id/behavior_report_details"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		                
+		                android:fontFamily="sans-serif-light" />
+				<TextView
+	                android:layout_gravity="left"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:fontFamily="sans-serif-light"
+	                style="@android:style/TextAppearance.Medium"
+	                android:text="@string/comments" />
+
+				<TextView android:id="@+id/behavior_report_comments"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		             	
+		                
+		                android:fontFamily="sans-serif-light" />
+			</LinearLayout>
+
+	        
+	    <!--Academic Report -->
+	        <TextView 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/a_report"
+		      
+		        style="?android:attr/listSeparatorTextViewStyle" />
+
+	        <LinearLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:padding="10dip"
+			    android:orientation="horizontal" >
+				<TextView
+	                android:layout_gravity="left"
+	                android:layout_width="0dip"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:fontFamily="sans-serif-light"
+	                style="@android:style/TextAppearance.Medium"
+	                android:text="@string/location" />
+
+				<TextView android:id="@+id/academic_location"
+				    	
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="right"
+		                android:fontFamily="sans-serif-light"
+		                 />
+			</LinearLayout>
+
+	        <LinearLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:padding="10dip"
+			    android:orientation="vertical" >
+				<TextView
+	                android:layout_gravity="left"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:fontFamily="sans-serif-light"
+	                style="@android:style/TextAppearance.Medium"
+	                android:text="@string/details" />
+
+				<TextView android:id="@+id/academic_report_details"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		              
+		                android:fontFamily="sans-serif-light" />
+				<TextView
+	                android:layout_gravity="left"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:fontFamily="sans-serif-light"
+	                style="@android:style/TextAppearance.Medium"
+	                android:text="@string/comments" />
+
+				<TextView android:id="@+id/academic_report_comments"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		             	
+		                android:fontFamily="sans-serif-light" />
+			</LinearLayout>
+
+
+	    <!-- Strategies -->
+        <TextView 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/strategies"
+		 
+	        style="?android:attr/listSeparatorTextViewStyle" />
+
+        	<LinearLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:padding="10dip"
+			    android:orientation="vertical" >
+				<TextView
+	                android:layout_gravity="left"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:fontFamily="sans-serif-light"
+	                style="@android:style/TextAppearance.Medium"
+	                android:text="@string/details" />
+
+				<TextView android:id="@+id/strategies_report_details"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		             	
+		                android:fontFamily="sans-serif-light" />
+				<TextView
+	                android:layout_gravity="left"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:fontFamily="sans-serif-light"
+	                style="@android:style/TextAppearance.Medium"
+	                android:text="@string/comments" />
+
+				<TextView android:id="@+id/strategies_report_comments"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		             	
+		                
+		                android:fontFamily="sans-serif-light" />
+			</LinearLayout>
+			
+			   
+        <LinearLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:padding="10dip"
+			    android:orientation="horizontal" >
+				<Button android:id="@+id/email_button"
+	                android:layout_gravity="left"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:fontFamily="sans-serif-light"
+	                style="@android:style/TextAppearance.Medium"
+	                android:text="@string/send_email" />
+
+				<Button android:id="@+id/delete_button"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="right"
+						android:text= "@string/delete_report"	                
+		                android:fontFamily="sans-serif-light" />
+			</LinearLayout>
+
+	    </LinearLayout>
+	</ScrollView>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="negative_color">#5A1919</color>
+    <color name="positive_color">#004700</color>
+</resources>
