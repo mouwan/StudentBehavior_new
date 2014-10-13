@@ -3,6 +3,7 @@ package edu.upenn.cis350.comegysbehavior;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import android.support.v4.app.Fragment;
+import android.text.format.Time;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -61,6 +62,7 @@ public class BehaviorFragment extends Fragment {
 		View rootView = inflater.inflate(R.layout.report, container, false);
 		initSpinnerContent(rootView);
 		initSubmitButton(rootView);
+		initClearButton(rootView);
 		
 		student_name     = (EditText) rootView.findViewById(R.id.scholar_name);
 		strategy_comment = (EditText) rootView.findViewById(R.id.strategy_comment);
@@ -99,6 +101,51 @@ public class BehaviorFragment extends Fragment {
             	}
              }
          });
+	}
+	
+	private void resetCheckBox(final View rootView, int[] checkBox){
+		for(int id: checkBox) {
+			CheckBox checkbox = (CheckBox) rootView.findViewById(id);
+			if(checkbox.isChecked()) checkbox.toggle();
+		}
+	}
+	
+	private void resetTextField(final View rootView, int id){
+		EditText temp = (EditText) rootView.findViewById(id);
+		temp.setText("");
+	}
+	
+	private void resetSpinner(final View rootView, int id){
+		Spinner spinner = (Spinner) rootView.findViewById(id);
+		spinner.setSelection(0);
+	}
+	
+	private void resetDate(final View rootView, int id){
+		DatePicker datePicker = (DatePicker) rootView.findViewById(id);
+		Time now = new Time();
+		now.setToNow();
+		datePicker.updateDate(now.year, now.month, now.monthDay);
+	}
+	
+	
+	private void initClearButton(final View rootView){
+		final Button button = (Button) rootView.findViewById(R.id.clear_form_button);
+		 button.setOnClickListener(new View.OnClickListener() {
+	        	@Override
+	             public void onClick(View v) {
+	        		resetCheckBox(rootView,checkboxBehaviorIds);
+	        		resetCheckBox(rootView,checkboxAcademicIds);
+	        		resetCheckBox(rootView,checkboxStrategyIds);
+	        		resetTextField(rootView, R.id.scholar_name);
+	        		resetTextField(rootView, R.id.strategy_comment);
+	        		resetTextField(rootView, R.id.academic_comment);
+	        		resetTextField(rootView, R.id.behavior_comment);
+	        		resetSpinner(rootView,R.id.academic_settings_spinner);
+	        		resetSpinner(rootView,R.id.behavior_settings_spinner);
+	        		resetSpinner(rootView,R.id.grade_spinner);
+	        		resetDate(rootView, R.id.SelectDate);
+	        	}
+		 });
 	}
 	
 	private void setReportDate() {
