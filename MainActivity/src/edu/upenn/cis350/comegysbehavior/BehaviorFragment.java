@@ -47,7 +47,8 @@ public class BehaviorFragment extends Fragment {
 	    	R.id.checkbox_academic_consistentlyPreparedAndOrganized, R.id.checkbox_academic_completesHomeworkAndAssignments, 
 	    	R.id.checkbox_academic_staysOnTask, R.id.checkbox_academic_peerTutoring, R.id.checkbox_academic_disruptionOfClassLessonActivity, 
 	    	R.id.checkbox_academic_refusalToFollowDirectionsAndParticipate, R.id.checkbox_academic_unPreparedAndDisorganized, 
-	    	R.id.checkbox_academic_failureToCompleteHomeworkAssignment, R.id.checkbox_academic_questionableAcademicIntegrity};
+	    	R.id.checkbox_academic_failureToCompleteHomeworkAssignment, R.id.checkbox_academic_questionableAcademicIntegrity,
+	    	R.id.checkbox_academic_struggles};
 	private static final int[] checkboxStrategyIds =
 		{R.id.checkbox_strategy_plannedIgnoring, R.id.checkbox_strategy_behaviorLog, 
 	    	R.id.checkbox_strategy_reteachReviewExpectations, R.id.checkbox_strategy_restorativeAction, 
