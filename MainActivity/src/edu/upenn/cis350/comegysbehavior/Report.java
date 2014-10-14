@@ -325,6 +325,7 @@ public class Report implements Parcelable {
 		out.writeString(this.strategyComment);
 		out.writeString(this.reportDetailsAndComments);
 		out.writeString(this.objectID);
+		//out.writeString(this.objectID);
 	}
 	
 	private Report(Parcel in) {
@@ -359,40 +360,24 @@ public class Report implements Parcelable {
 
 	public String createEmailReportString() {
 
-		/*String report = String.format(
+		String report = String.format(
 				"Student Behavior Report \n\nName: %s\nGrade: %s\nDate: ",
 				studentName, studentGrade, reportCreatedDate);
-		*/
-		 String report = "Student Behavior Report \n"; report = report +
-		  "\nName: " + studentName; report = report + "\nGrade: " +
-		  studentGrade; report = report + "%s\nDate: " + reportCreatedDate;
-		 
+				 
 		if (!behaviorSummary.equals("")) {
-			report = report + "\n\nBehavior Summary: \n" + behaviorSummary;
-			if (!behaviorSetting.equals(""))
-				report = report + "\nSetting: " + behaviorSetting;
-			if (!behaviorComment.equals(""))
-				report = report + "\n\nComments: " + behaviorComment;
+			report = report + "\n\nBehavior Summary: \n" + behaviorSummary + repo(behaviorSetting, behaviorComment);
 		}
 		if (!academicSummary.equals("")) {
-			report = report + "\n\nAcademic Summary: \n" + academicSummary;
-			if (!academicSetting.equals(""))
-				report = report + "\nSetting: " + academicSetting;
-			if (!academicComment.equals(""))
-				report = report + "\n\nComments: " + academicComment;
+			report = report + "\n\nAcademic Summary: \n" + academicSummary + repo(academicSetting, academicComment);
 		}
 		if (!strategySummary.equals("")) {
-			report = report + "\n\nStrategy Summary: \n" + strategySummary;
-			if (!strategyComment.equals(""))
-				report = report + "\n\nComments: " + strategyComment;
+			report = report + "\n\nStrategy Summary: \n" + strategySummary + repo("", strategyComment);
 		}
-
 		return report;
 	}
 
 	private String repo(String...content) {
 		String result = "";
-		
 		for (int i = 0; i < 2; i++) {
 			switch (content[i]) {
 			case "":
